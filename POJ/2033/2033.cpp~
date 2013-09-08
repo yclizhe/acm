@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int decode(char a, char b) {
+	int x = 10*(a-'0') + b-'0';
+	if(x>=10 && x<=26)
+		return 1;
+	else
+		return 0;
+}
+
+int dp[1000];
+char str[1000];
+int main() {
+	while(cin >> str) {
+		if(strcmp(str,"0") == 0)
+			break;
+		memset(dp,0,sizeof(dp));
+		dp[0] = 1;
+		dp[1] = 1 + decode(str[0],str[1]);
+		int len = 2;
+		char * temp = str+2;
+		while(*temp) {
+			dp[len] = dp[len-1]+dp[len-2]*decode(*(temp-1),*temp);
+			temp++;
+			len++;
+		}
+	//	for(int i=2; i<len; i++)
+	//		dp[i] = dp[i-1]+dp[i-2]*decode(str[i-1],str[i]);
+		cout << dp[len-1] << endl;
+		
+	}
+}

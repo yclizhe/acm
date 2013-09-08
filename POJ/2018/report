@@ -1,0 +1,12 @@
+dp和sum为滚动数组，dp记录以i-1结尾的长度大于或者等于f的平均最大的子数组的和(count记录对应长度)，sum记录以i-1结尾的长度为f的子数组的和
+则 s1 = (dp+a[i])/(count+1) 表示以当前i结尾的长度大于f的子数组平均值
+   sum = sum+a[i]-a[i-f]
+   s2 = sum/f 表示当前i结尾的长度等于f的子数组平均值
+
+根据s1和s2推出当前位置的dp
+if(s1>s2)
+	dp = dp+a[i]; count++; max=Max(s1,max)
+else
+	dp = sum; count=f; max=Max(s2,max)
+
+return max

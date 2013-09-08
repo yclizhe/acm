@@ -1,0 +1,76 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+Language:
+Ministry
+Time Limit: 1000MS		Memory Limit: 65536K
+Total Submissions: 4239		Accepted: 1357		Special Judge
+
+Description
+Mr. F. wants to get a document be signed by a minister. A minister signs a document only if it is approved by his ministry. The ministry is an M-floor building with floors numbered from 1 to M, 1<=M<=100. Each floor has N rooms (1<=N<=500) also numbered from 1 to N. In each room there is one (and only one) official.
+
+A document is approved by the ministry only if it is signed by at least one official from the M-th floor. An official signs a document only if at least one of the following conditions is satisfied:
+
+    a. the official works on the 1st floor;
+    b. the document is signed by the official working in the room with the same number but situated one floor below;
+    c. the document is signed by an official working in a neighbouring room (rooms are neighbouring if they are situated on the same floor and their numbers differ by one). 
+
+
+Each official collects a fee for signing a document. The fee is a positive integer not exceeding 10^9.
+
+You should find the cheapest way to approve the document.
+
+Input
+The first line of an input file contains two integers, separated by space. The first integer M represents the number of floors in the building, and the second integer N represents the number of rooms per floor. Each of the next M lines contains N integers separated with spaces that describe fees (the k-th integer at l-th line is the fee required by the official working in the k-th room at the l-th floor).
+
+Output
+You should print the numbers of rooms (one per line) in the order they should be visited to approve the document in the cheapest way. If there are more than one way leading to the cheapest cost you may print an any of them.
+
+Sample Input
+
+3 4
+10 10 1 10
+2 2 2 10
+1 10 10 10
+
+Sample Output
+
+3
+3
+2
+1
+1
+
+Hint
+You can assume that for each official there always exists a way to get the approval of a document (from the 1st floor to this official inclusively) paying no more than 10^9.
+This problem has huge input data,use scanf() instead of cin to read data to avoid time limit exceed.
+
+Source
+Ural Collegiate Programming Contest 1999
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

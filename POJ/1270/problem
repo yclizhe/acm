@@ -1,0 +1,82 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	ycjxli      Log Out
+Mail:4(4)
+Login Log      Archive
+Language:
+Following Orders
+Time Limit: 1000MS		Memory Limit: 10000K
+Total Submissions: 3243		Accepted: 1255
+
+Description
+Order is an important concept in mathematics and in computer science. For example, Zorn's Lemma states: ``a partially ordered set in which every chain has an upper bound contains a maximal element.'' Order is also important in reasoning about the fix-point semantics of programs.
+
+
+This problem involves neither Zorn's Lemma nor fix-point semantics, but does involve order.
+Given a list of variable constraints of the form x < y, you are to write a program that prints all orderings of the variables that are consistent with the constraints.
+
+
+For example, given the constraints x < y and x < z there are two orderings of the variables x, y, and z that are consistent with these constraints: x y z and x z y.
+
+Input
+The input consists of a sequence of constraint specifications. A specification consists of two lines: a list of variables on one line followed by a list of contraints on the next line. A constraint is given by a pair of variables, where x y indicates that x < y.
+
+
+All variables are single character, lower-case letters. There will be at least two variables, and no more than 20 variables in a specification. There will be at least one constraint, and no more than 50 constraints in a specification. There will be at least one, and no more than 300 orderings consistent with the contraints in a specification.
+
+
+Input is terminated by end-of-file.
+
+Output
+For each constraint specification, all orderings consistent with the constraints should be printed. Orderings are printed in lexicographical (alphabetical) order, one per line.
+
+
+Output for different constraint specifications is separated by a blank line.
+
+Sample Input
+
+a b f g
+a b b f
+v w x y z
+v y x v z v w v
+
+Sample Output
+
+abfg
+abgf
+agbf
+gabf
+
+wxzvy
+wzxvy
+xwzvy
+xzwvy
+zwxvy
+zxwvy
+
+Source
+Duke Internet Programming Contest 1993,uva 124
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

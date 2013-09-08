@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+char dp[2][205];
+char a[205],b[205],c[405];
+bool DFS(int ia, int ib, int la, int lb) {
+	if(ia==-1 && ib==-1)
+		return true;
+
+	if(ia>=0 && a[ia]==c[ia+ib+1])
+		return DFS(ia-1,ib,la,lb);
+	else if(ib>=0 && b[ib]==c[ia+ib+1])
+		return DFS(ia,ib-1,la,lb);
+	else
+		return false;
+	
+}
+int main () {
+	int n,la,lb;
+	cin >> n;
+	int N = n;
+	while(n--) {
+		memset(dp,0,sizeof(dp));
+		cin >> a >> b >> c;
+		la = strlen(a);
+		lb = strlen(b);
+		if(DFS(la-1,lb-1,la,lb))
+			cout << 
+	}
+}

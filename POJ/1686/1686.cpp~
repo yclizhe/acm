@@ -1,0 +1,81 @@
+#include <iostream>
+#include <stack>
+#include <cstring>
+using namespace std;
+char a[100];
+char b[100];
+stack<char> OPST;
+stack<int> VAST;
+
+
+int operate(int x, int y, char o) {
+	if(o == '+')
+		return y+x;
+	else if(o == '-') 
+		return y-x;
+	else 
+		return y*x;
+}
+
+int getValue(char *a) {
+	int n = strlen(a);
+	OPST.push('#');
+	for(int i=0; i<n; i++) {
+		char c = a[i];
+		if(c == ' ' || c == '\t')
+			continue;
+		if(c == '*' || c=='+' || c=='-') {
+			OPST.push(c);	
+		}
+		else if(c == '(') {
+			OPST.push(c);	
+		}
+		else if(c == ')') {
+			char o;
+			while( (o=OPST.top()) != '(') {
+				OPST.pop();
+				int x = VAST.top();
+				int y = VAST.top();
+				VAST.pop();
+				VAST.pop();
+				int re = operate(x,y,o);
+				VAST.push(re);
+			}	
+			OPST.pop();
+		}
+		else {
+			VAST.push(c);	
+		}
+	}
+
+	char o;
+	while( (o=OPST.top()) != '#') {
+		OPST.pop();
+		int x = VAST.top();
+		int y = VAST.top();
+		VAST.pop();
+		VAST.pop();
+		int re = operate(x,y,o);
+		VAST.push(re);
+	}	
+	return VAST.top();
+}
+
+int main() {
+	int N;
+	cin >> N;
+	while(N--) {
+		while(!OPST.empty())
+			OPST.pop();
+		while(!VAST.empty())
+			VAST.pop();
+		cin.getline(a,99);
+		cin.getline(b,99);
+		int va = getValue(a);
+		int vb = getValue(b);
+		if(va == vb)
+			cout << "YES" << endl;
+		else
+			cout << "NO" << endl;
+	}
+}

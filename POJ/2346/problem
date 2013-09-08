@@ -1,0 +1,55 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+Language:
+Lucky tickets
+Time Limit: 1000MS		Memory Limit: 65536K
+Total Submissions: 3028		Accepted: 1969
+
+Description
+The public transport administration of Ekaterinburg is anxious about the fact that passengers don't like to pay for passage doing their best to avoid the fee. All the measures that had been taken (hard currency premiums for all of the chiefs, increase in conductors' salaries, reduction of number of buses) were in vain. An advisor especially invited from the Ural State University says that personally he doesn't buy tickets because he rarely comes across the lucky ones (a ticket is lucky if the sum of the first three digits in its number equals to the sum of the last three ones). So, the way out is found — of course, tickets must be numbered in sequence, but the number of digits on a ticket may be changed. Say, if there were only two digits, there would have been ten lucky tickets (with numbers 00, 11, ..., 99). Maybe under the circumstances the ratio of the lucky tickets to the common ones is greater? And what if we take four digits? A huge work has brought the long-awaited result: in this case there will be 670 lucky tickets. But what to do if there are six or more digits?
+So you are to save public transport of our city. Write a program that determines a number of lucky tickets for the given number of digits. By the way, there can't be more than 10 digits on one ticket.
+
+Input
+Input contains a positive even integer N not greater than 10. It's an amount of digits in a ticket number.
+
+Output
+Output should contain a number of tickets such that the sum of the first N/2 digits is equal to the sum of the second half of digits.
+
+Sample Input
+
+4
+
+Sample Output
+
+670
+
+Source
+Ural State University Internal Contest October'2000 Students Session
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

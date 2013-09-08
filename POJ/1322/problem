@@ -1,0 +1,67 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+欢迎选修北京大学 《ACM/ICPC竞赛训练》 暑期课程！和北大ACM队员一起互相交流，学习！
+Language:
+Chocolate
+Time Limit: 2000MS		Memory Limit: 65536K
+Total Submissions: 7624		Accepted: 1998		Special Judge
+
+Description
+In 2100, ACM chocolate will be one of the favorite foods in the world.
+
+"Green, orange, brown, red...", colorful sugar-coated shell maybe is the most attractive feature of ACM chocolate. How many colors have you ever seen? Nowadays, it's said that the ACM chooses from a palette of twenty-four colors to paint their delicious candy bits.
+
+One day, Sandy played a game on a big package of ACM chocolates which contains five colors (green, orange, brown, red and yellow). Each time he took one chocolate from the package and placed it on the table. If there were two chocolates of the same color on the table, he ate both of them. He found a quite interesting thing that in most of the time there were always 2 or 3 chocolates on the table.
+
+Now, here comes the problem, if there are C colors of ACM chocolates in the package (colors are distributed evenly), after N chocolates are taken from the package, what's the probability that there is exactly M chocolates on the table? Would you please write a program to figure it out?
+
+Input
+The input file for this problem contains several test cases, one per line.
+
+For each case, there are three non-negative integers: C (C <= 100), N and M (N, M <= 1000000).
+
+The input is terminated by a line containing a single zero.
+
+Output
+The output should be one real number per line, shows the probability for each case, round to three decimal places.
+
+Sample Input
+
+5 100 2
+
+0
+
+Sample Output
+
+0.625 
+
+Source
+Beijing 2002
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

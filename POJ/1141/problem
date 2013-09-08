@@ -1,0 +1,67 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	ycjxli      Log Out
+Mail:18(18)
+Login Log      Archive
+Language:
+Brackets Sequence
+Time Limit: 1000MS		Memory Limit: 65536K
+Total Submissions: 22482		Accepted: 6316		Special Judge
+
+Description
+Let us define a regular brackets sequence in the following way:
+
+1. Empty sequence is a regular sequence.
+2. If S is a regular sequence, then (S) and [S] are both regular sequences.
+3. If A and B are regular sequences, then AB is a regular sequence.
+
+For example, all of the following sequences of characters are regular brackets sequences:
+
+(), [], (()), ([]), ()[], ()[()]
+
+And all of the following character sequences are not:
+
+(, [, ), )(, ([)], ([(]
+
+Some sequence of characters '(', ')', '[', and ']' is given. You are to find the shortest possible regular brackets sequence, that contains the given character sequence as a subsequence. Here, a string a1 a2 ... an is called a subsequence of the string b1 b2 ... bm, if there exist such indices 1 = i1 < i2 < ... < in = m, that aj = bij for all 1 = j = n.
+
+Input
+The input file contains at most 100 brackets (characters '(', ')', '[' and ']') that are situated on a single line without any other characters among them.
+
+Output
+Write to the output file a single line that contains some regular brackets sequence that has the minimal possible length and contains the given sequence as a subsequence.
+
+Sample Input
+
+([(]
+
+Sample Output
+
+()[()]
+
+Source
+Northeastern Europe 2001
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

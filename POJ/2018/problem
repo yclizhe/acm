@@ -1,0 +1,70 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+Language:
+Best Cow Fences
+Time Limit: 1000MS		Memory Limit: 30000K
+Total Submissions: 8757		Accepted: 2796
+
+Description
+Farmer John's farm consists of a long row of N (1 <= N <= 100,000)fields. Each field contains a certain number of cows, 1 <= ncows <= 2000.
+
+FJ wants to build a fence around a contiguous group of these fields in order to maximize the average number of cows per field within that block. The block must contain at least F (1 <= F <= N) fields, where F given as input.
+
+Calculate the fence placement that maximizes the average, given the constraint.
+
+Input
+* Line 1: Two space-separated integers, N and F.
+
+* Lines 2..N+1: Each line contains a single integer, the number of cows in a field. Line 2 gives the number of cows in field 1,line 3 gives the number in field 2, and so on.
+
+Output
+* Line 1: A single integer that is 1000 times the maximal average.Do not perform rounding, just print the integer that is 1000*ncows/nfields.
+
+Sample Input
+
+10 6
+6 
+4
+2
+10
+3
+8
+5
+9
+4
+1
+
+Sample Output
+
+6500
+
+Source
+USACO 2003 March Green
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

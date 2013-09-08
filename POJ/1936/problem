@@ -1,0 +1,62 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+Language:
+All in All
+Time Limit: 1000MS		Memory Limit: 30000K
+Total Submissions: 25403		Accepted: 10202
+
+Description
+You have devised a new encryption technique which encodes a message by inserting between its characters randomly generated strings in a clever way. Because of pending patent issues we will not discuss in detail how the strings are generated and inserted into the original message. To validate your method, however, it is necessary to write a program that checks if the message is really encoded in the final string.
+
+Given two strings s and t, you have to decide whether s is a subsequence of t, i.e. if you can remove characters from t such that the concatenation of the remaining characters is s.
+
+Input
+The input contains several testcases. Each is specified by two strings s, t of alphanumeric ASCII characters separated by whitespace.The length of s and t will no more than 100000.
+
+Output
+For each test case output "Yes", if s is a subsequence of t,otherwise output "No".
+
+Sample Input
+
+sequence subsequence
+person compression
+VERDI vivaVittorioEmanueleReDiItalia
+caseDoesMatter CaseDoesMatter
+
+Sample Output
+
+Yes
+No
+Yes
+No
+
+Source
+Ulm Local 2002
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+

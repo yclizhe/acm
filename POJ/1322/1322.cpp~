@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+	int C,N,M;
+	while(cin>>C && C!=0 && cin>>N>>M){
+		double **dp = new double* [N+1];
+		for(int i=0; i<N+1; i++)
+			dp[i] = new double[M+1];
+
+		dp[0][0] = 1;
+		for(int i=1; i<N+1; i++)
+			for(int j=0; j<=C&&j<=N; j++) {
+				if(j!=0)
+					dp[i][j] += (double)dp[i-1][j-1]*((double)(C-j+1)/C);
+				if(j!=M)
+					dp[i][j] += (double)dp[i-1][j+1]*((double)(j+1)/C);
+			}
+		cout << fixed;
+		cout << setprecision(3) << dp[N][M] << endl;
+	}
+
+	return 0;
+}

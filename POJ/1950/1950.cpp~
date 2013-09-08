@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+const char op[3] = {'+','-','.'};
+char ans[20];
+int numofans;
+int N;
+void print() {
+	cout << 1;
+	for(int i=2; i<=N; i++) 
+		cout << ans[i-2] << i;
+	cout << endl;
+}
+void dfs(int depth, int sum, int lastnum, char lastop) {
+	if(depth==N-1) {
+		if(lastop=='+')
+			sum += lastnum;
+		else
+			sum -= lastnum;
+		if(sum == 0) {
+			numofans++;
+			print();
+		}
+		return;
+	}
+	if(numofans == 20)
+		return;
+
+	for(int i=0; i<3; i++) {
+		ans[depth] = op[i];
+		if(i<2) {
+			if(lastop=='+')
+				sum += lastnum;
+			else
+				sum -= lastnum;
+			lastop = op[i];
+			lastnum = depth + 2;
+		}
+		else 
+			lastnum = lastnum*10 + (depth+2);
+		dfs(depth+1, sum, lastnum, lastop);
+	}
+}
+int main() {
+	cin >> N;
+	numofans = 0;
+	dfs(0,0,1,'+');
+
+}

@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sqrt - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\LiZhe\AppData\Local\Temp\RSPE62C.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/sqrt.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Users\LiZhe\Desktop\acm\sqrt\sqrt.cpp"
+]
+Creating command line "cl.exe @C:\Users\LiZhe\AppData\Local\Temp\RSPE62C.tmp" 
+Creating temporary file "C:\Users\LiZhe\AppData\Local\Temp\RSPE62D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/sqrt.pdb" /debug /machine:I386 /out:"Debug/sqrt.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\sqrt.obj
+]
+Creating command line "link.exe @C:\Users\LiZhe\AppData\Local\Temp\RSPE62D.tmp"
+<h3>Output Window</h3>
+Compiling...
+sqrt.cpp
+C:\Users\LiZhe\Desktop\acm\sqrt\sqrt.cpp(19) : error C2065: 'k' : undeclared identifier
+C:\Users\LiZhe\Desktop\acm\sqrt\sqrt.cpp(35) : error C2065: 'c' : undeclared identifier
+C:\Users\LiZhe\Desktop\acm\sqrt\sqrt.cpp(42) : error C2373: 'c' : redefinition; different type modifiers
+C:\Users\LiZhe\Desktop\acm\sqrt\sqrt.cpp(59) : error C2373: 'k' : redefinition; different type modifiers
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+sqrt.exe - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

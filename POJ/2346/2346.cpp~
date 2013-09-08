@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int dp[5][50];
+int main() {
+	int N;
+	cin >> N;
+	int n = N/2;
+	memset(dp,0,sizeof(dp));
+	dp[0][0] = 1;
+	for(int i=1; i<=n; i++)
+		for(int j=0; j<=9*i; j++)
+			for(int k=0; k<=j && k<=9; k++) {
+			//	cout << i << j << k << endl;
+				dp[i][j] += dp[i-1][j-k];
+			//	cout << dp[i][j] << endl;
+			}
+	int sum = 0;
+	for(int j=0; j<=n*9; j++)
+		sum += dp[n][j]*dp[n][j];
+	cout << sum << endl;
+
+}
+

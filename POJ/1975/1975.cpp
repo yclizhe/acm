@@ -1,0 +1,43 @@
+#include <cstdio>
+#include <iostream>
+#include <cstring>
+using namespace std; 
+int d[100][100];
+int main () {
+	int t,m,n,a,b;
+	scanf("%d",&t);
+	while(t--) {
+		memset(d,0,sizeof(d));
+		scanf("%d%d",&n,&m);
+		while(m--) {
+			scanf("%d%d",&a,&b);
+			d[a][b] = 1;
+			d[b][a] = -1;
+		} 
+                   for(int k=1; k<=n; k++)
+			for(int i=1; i<=n; i++)
+				for(int j=1; j<=n; j++)
+					 {
+						if(d[i][k]==1 && d[k][j]==1) {
+							d[i][j] = 1;
+							//break;
+						}
+						else if(d[i][k]==-1 && d[k][j]==-1) {
+							d[i][j] = -1;
+							//break;
+						}
+					}
+		int count = 0;
+		for(int i=1; i<=n; i++){
+			int h = 0, l = 0;
+			for(int j=1; j<=n; j++)
+				if(d[i][j]>0)
+					h++;
+				else if(d[i][j]<0)
+					l++;
+			if(h>=(n+1)/2 || l>=(n+1)/2)
+				count++;
+		}
+		cout << count << endl;
+	} 
+}
