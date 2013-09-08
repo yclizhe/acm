@@ -1,0 +1,90 @@
+	
+	
+Online Judge	Problem Set	Authors	Online Contests	User
+Web Board
+Home Page
+F.A.Qs
+Statistical Charts	
+Problems
+Submit Problem
+Online Status
+Prob.ID:
+	
+Register
+Update your info
+Authors ranklist
+	Current Contest
+Past Contests
+Scheduled Contests
+Award Contest	
+User ID:	
+Password:	
+  Register
+Language:
+Railway tickets
+Time Limit: 1000MS		Memory Limit: 65536K
+Total Submissions: 2489		Accepted: 873
+
+Description
+The railway line "Ekaterinburg-Sverdlovsk" with several stations has been built. This railway line can be represented as a line segment, railway stations being points on it. The railway line starts at the station "Ekaterinburg" and finishes at the station "Sverdlovsk", so stations are numbered starting from "Ekaterinburg" (it has number 1) and "Sverdlovsk" is the last station.
+
+Cost of the ticket between any two stations depends only on a distance between them. The prices for the tickets are specified in the following table.
+
+distance between stations -X
+	
+
+price for the ticket
+
+0<X<=L1
+	
+
+C1
+
+L1<X<=L2
+	
+
+C2
+
+L2<X<=L3
+	
+
+C3
+
+Direct tickets from one station to another can be booked if and only if the distance between these station does not exceed L3. So sometimes it is necessary to book several tickets to pay for the parts of the whole way between stations.
+
+For example, on the railway line shown at the figure above there are seven stations. The direct ticket from the second station to the sixth one can not be booked. There are several ways to pay for the travel between these stations. One of them is to book two tickets: one ticket at price C2 to travel between the second and the third stations, and other at price C3 to travel between the third and the sixth stations. Note, that though the distance between the second and the sixth stations is equal to 2*L2, the whole travel can not be paid by booking two tickets at price C2, because each ticket is valid for only one travel and each travel should start and end only at stations.
+
+Your task is to write a program, that will find the minimal cost of the travel between two given stations.
+
+Input
+The first line of the input file contains 6 integers L1, L2, L3, C1, C2, C3 (1 <= L1 < L2 < L3 <= 10^9, 1 <= C1 < C2 < C3 <= 10^9) in the specified order with one space between. The second line contains the amount of stations N (2 <= N <= 10000). The third line contains two different integers separated by space. They represent serial numbers of stations, the travel between which must be paid. Next N-1 lines contain distances from the first station ("Ekaterinburg") on the railway line to others. These distances are given as different positive integers and are arranged in the ascending order. The distance from "Ekaterinburg" to "Sverdlovsk" does not exceed 10^9. The distance between any neighboring stations does not exceed L3. The minimal travel cost between two given stations will not exceed 10^9.
+
+Output
+Program should print to the output file the only number, which is the minimal travel cost between two given stations.
+
+Sample Input
+
+3 6 8 20 30 40
+7
+2 6
+3
+7
+8
+13
+15
+23
+
+Sample Output
+
+70
+
+Source
+Ural Collegiate Programming Contest 1999
+
+[Submit]   [Go Back]   [Status]   [Discuss]
+
+Home Page   Go Back  To top
+
+All Rights Reserved 2003-2013 Ying Fuchen,Xu Pengcheng,Xie Di
+Any problem, Please Contact Administrator
+
